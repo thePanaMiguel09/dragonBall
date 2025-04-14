@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 export const api = axios.create({
-    baseURL: "http://dragonball-api.com/api-docs"
-})
+  baseURL: "https://www.dragonball-api.com/api",
+});
