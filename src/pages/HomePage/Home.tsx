@@ -19,6 +19,38 @@ function Home() {
           race="GOKU"
           totalKi="1000000"
         />
+        <CustomCard
+          afilliation="Z Fighter"
+          baseKi="1000"
+          image="https://dragonball-api.com/characters/goku_normal.webp"
+          name="Goku"
+          race="GOKU"
+          totalKi="1000000"
+        />
+        <CustomCard
+          afilliation="Z Fighter"
+          baseKi="1000"
+          image="https://dragonball-api.com/characters/goku_normal.webp"
+          name="Goku"
+          race="GOKU"
+          totalKi="1000000"
+        />
+        <CustomCard
+          afilliation="Z Fighter"
+          baseKi="1000"
+          image="https://dragonball-api.com/characters/goku_normal.webp"
+          name="Goku"
+          race="GOKU"
+          totalKi="1000000"
+        />
+        <CustomCard
+          afilliation="Z Fighter"
+          baseKi="1000"
+          image="https://dragonball-api.com/characters/goku_normal.webp"
+          name="Goku"
+          race="GOKU"
+          totalKi="1000000"
+        />
       </main>
     </div>
   );
