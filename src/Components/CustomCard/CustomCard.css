@@ -1,6 +1,4 @@
-.imageBackground{
-    background-image: url('/public/cardBackground.webp');
-}
+
 
 .descriptionTextColor{
     color: rgb(250, 191, 45);
@@ -8,4 +6,8 @@
 
 .descriptionTextColorTitle{
     color: white;
+}
+
+.character {
+    z-index: 2;
 }
