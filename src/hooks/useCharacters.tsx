@@ -2,7 +2,6 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { getCharacters } from "../../core/actions/characters/getCharacters";
 
 export const useCharacters = () => {
-    
   const characters = useInfiniteQuery({
     initialPageParam: 1,
     queryKey: ["characters", "getAllCharacters"],
