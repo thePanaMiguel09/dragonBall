@@ -1,0 +1,109 @@
+.headerContainer {
+  width: 100vw;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.imgDragonBall {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.fontFamily {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.fontSize {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.fontColor {
+  color: rgb(97, 97, 97);
+}
+
+.button-color {
+  background-color: rgb(251, 192, 45);
+}
+
+.button-border {
+  border: none;
+  border-radius: 4px;
+}
+
+.button {
+  display: inline-flex;
+  line-height: 1.75;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-width: 64px;
+}
+
+.button-font-size {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.button-font-color {
+  color: white;
+}
+
+.button-font-family {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+div {
+  a {
+    text-decoration: none;
+  }
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+@media (width < 600px) {
+  .button {
+    min-width: 64px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(251, 192, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .support-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .support {
+    display: none;
+  }
+
+  .heart {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+}
