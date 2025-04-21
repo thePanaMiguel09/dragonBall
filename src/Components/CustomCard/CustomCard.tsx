@@ -59,7 +59,7 @@ function CustomCard({
         }}
       />
       <CardContent
-        sx={{ position: "relative", zIndex: 1 }}
+        sx={{ position: "relative", zIndex: 1,}}
         className="cardContent"
       >
         <div className="nameCharacter">{name}</div>

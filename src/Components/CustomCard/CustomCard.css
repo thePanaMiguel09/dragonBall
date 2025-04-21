@@ -12,8 +12,8 @@
     height: 40%;
     width: 100%;
     background-color: rgb(60, 62, 68);
-    margin: 0;
-    padding: 0;
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
 }
 
 .nameCharacter{

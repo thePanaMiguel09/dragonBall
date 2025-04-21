@@ -3,8 +3,12 @@ import "./Home.css";
 import Header from "../../Components/Header/Header";
 import logo from "/logo_dragonballapi.webp";
 import CustomCard from "../../Components/CustomCard/CustomCard";
+import { useCharacters } from "../../hooks/useCharacters";
 
 function Home() {
+
+  const {characters} = useCharacters();
+
   return (
     <div className="homeContainer">
       
@@ -16,46 +20,16 @@ function Home() {
         <h1 className="text-logo">The Dragon Ball API</h1>
       </main>
       <div className="main">
-        <CustomCard
-          afilliation="Z Fighter"
-          baseKi="1000"
-          image="https://dragonball-api.com/characters/goku_normal.webp"
-          name="Goku"
-          race="GOKU"
-          totalKi="1000000"
-        />
-        <CustomCard
-          afilliation="Z Fighter"
-          baseKi="1000"
-          image="https://dragonball-api.com/characters/goku_normal.webp"
-          name="Goku"
-          race="GOKU"
-          totalKi="1000000"
-        />
-        <CustomCard
-          afilliation="Z Fighter"
-          baseKi="1000"
-          image="https://dragonball-api.com/characters/goku_normal.webp"
-          name="Goku"
-          race="GOKU"
-          totalKi="1000000"
-        />
-        <CustomCard
-          afilliation="Z Fighter"
-          baseKi="1000"
-          image="https://dragonball-api.com/characters/goku_normal.webp"
-          name="Goku"
-          race="GOKU"
-          totalKi="1000000"
-        />
-        <CustomCard
-          afilliation="Z Fighter"
-          baseKi="1000"
-          image="https://dragonball-api.com/characters/goku_normal.webp"
-          name="Goku"
-          race="GOKU"
-          totalKi="1000000"
-        />
+      {
+        characters.data?.pages[0].items.map((item)=> 
+          <CustomCard afilliation={item.affiliation} baseKi={item.ki} image={item.image} name={item.name}
+          race={item.race}
+          totalKi={item.maxKi}
+          key={item.id}
+          />
+          
+        )
+      }
       </div>
     </div>
   );
