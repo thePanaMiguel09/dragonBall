@@ -7,9 +7,9 @@ import CustomCard from "../../Components/CustomCard/CustomCard";
 function Home() {
   return (
     <div className="homeContainer">
-      <header>
+      
       <Header />
-      </header>
+      
       
       <main className="logoContainer">
         <img src={logo} alt="logoDragonBall" className="logoImage" />

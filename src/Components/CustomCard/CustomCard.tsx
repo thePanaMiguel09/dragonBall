@@ -1,7 +1,6 @@
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-// import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 import "./CustomCard.css";
 
 interface Props {
@@ -22,78 +21,55 @@ function CustomCard({
   afilliation,
 }: Props) {
   return (
-    <Card sx={{ height: '83vh', width: '18vw', borderRadius: '10px' }}>
-      <CardMedia component="img"
-        height={"auto"}
-        image={image}
+    <Card
+      sx={{ width: "280px", position: "relative", overflow: "visible" }}
+      className="card"
+    >
+      <Box
         sx={{
+          width: "100%",
+          height: "350px",
           backgroundImage: "url('/cardBackground.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          position: "relative",
+          borderTopLeftRadius: "0.75rem",
+          borderTopRightRadius: "0.75rem",
           overflow: "hidden",
-          height: '60%',
-        }} />
-
-
-      <CardContent className="cardContent">
-
-        {/* <Typography className="nameCharacter" gutterBottom variant="h2" component="div">
-          {name}
-        </Typography> */}
-        <div className="nameCharacter">
-          {name}
-        </div>
-
-        {/* <Typography className="descriptionText" variant="caption">
-          {race}
-        </Typography> */}
-        <div className="descriptionText">
-          {race}
-        </div>
-
-        {/* <Typography className="descriptionTextTitle">
-          Base ki:
-        </Typography> */}
-        <div className="descriptionTextTitle">
-          Base KI:
-        </div>
-
-        {/* <Typography className="descriptionText" variant="caption">
-          {baseki}
-        </Typography> */}
-        <div className="descriptionText">
-          {baseKi}
-        </div>
-
-        {/* <Typography className="descriptionTextTitle" variant="h5">
-          Total Ki:
-        </Typography> */}
-        <div className="descriptionTextTitle">
-          Total KI:
-        </div>
-
-        {/* <Typography className="descriptionText" variant="caption">
-          {totalki}
-        </Typography> */}
-        <div className="descriptionText">
-          {totalKi}
-        </div>
-
-        {/* <Typography className="descriptionTextTitle" variant="h5">
-          Afilliation:
-        </Typography> */}
-        <div className="descriptionTextTitle">
-          Afilliation:
-        </div>
-
-        {/* <Typography className="descriptionText" variant="caption">
-          {afilliation}
-        </Typography> */}
-        <div className="descriptionText">
-          {afilliation}
-        </div>
-
+          zIndex: 1,
+        }}
+      />
+      <Box
+        component="img"
+        src={image}
+        alt={name}
+        sx={{
+          width: "120%",
+          maxHeight: "350px",
+          objectFit: "contain",
+          transform: "translate(-5%, 0) scale(1.1)",
+          transition: "transform 0.6s ease-in-out",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          zIndex: 2,
+          "&:hover": {
+            transform: "translate(-5%, -10%) scale(1.25)",
+            transition: "transform 0.6s",
+          },
+        }}
+      />
+      <CardContent
+        sx={{ position: "relative", zIndex: 1 }}
+        className="cardContent"
+      >
+        <div className="nameCharacter">{name}</div>
+        <div className="descriptionText">{race}</div>
+        <div className="descriptionTextTitle">Base KI:</div>
+        <div className="descriptionText">{baseKi}</div>
+        <div className="descriptionTextTitle">Total KI:</div>
+        <div className="descriptionText">{totalKi}</div>
+        <div className="descriptionTextTitle">Afilliation:</div>
+        <div className="descriptionText">{afilliation}</div>
       </CardContent>
     </Card>
   );
