@@ -43,17 +43,17 @@ function CustomCard({
         src={image}
         alt={name}
         sx={{
-          width: "120%",
+          width: "100%",
           maxHeight: "350px",
           objectFit: "contain",
-          transform: "translate(-5%, 0) scale(1.1)",
+          transform: "scale(1.1)",
           transition: "transform 0.6s ease-in-out",
           position: "absolute",
           top: 0,
           left: 0,
           zIndex: 2,
           "&:hover": {
-            transform: "translate(-5%, -10%) scale(1.25)",
+            transform: "scale(1.25)",
             transition: "transform 0.6s",
           },
         }}
