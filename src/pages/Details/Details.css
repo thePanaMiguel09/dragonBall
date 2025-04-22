@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detailsContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272b33 !important;
+}
+
+.image {
+    object-fit: contain !important;
+}
+
+.containerImage {
+    background-image: url('/cardBackground.webp');
+    z-index: 2;
+}
+
+
+.cardContainer {
+   background-color: rgb(60, 62, 68) !important;
+}

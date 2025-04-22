@@ -12,6 +12,6 @@ export const getCharacters = async (page: number, limit: number) => {
     return data;
   } catch (error) {
     console.log("No se pudo obterner los personajes");
-    throw error; 
+    throw error;
   }
 };
