@@ -30,6 +30,7 @@ function Home() {
             children={characters.data?.pages.map((page) =>
               page.items.map((char) => (
                 <CustomCard
+                  id={char.id.toString()}
                   key={char.id}
                   afilliation={char.affiliation}
                   baseKi={char.ki}
