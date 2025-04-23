@@ -5,6 +5,7 @@ import Home from "./pages/HomePage/Home";
 import Details from "./pages/DetailsPage/Details";
 import MalePage from "./pages/MalePage/MalePage";
 import FemalePage from "./pages/FemalePage/FemalePage";
+import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 
 import "./App.css";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/details/:id" element={<Details />} />
           <Route path="/filter/male" element={<MalePage />} />
           <Route path="/filter/female" element={<FemalePage />} />
+          <Route path="/aboutus" element={<AboutUsPage/>}/>
           <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
       </BrowserRouter>
