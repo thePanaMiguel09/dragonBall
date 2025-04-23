@@ -1,4 +1,3 @@
-import React from "react";
 
 import "./PersonalCard.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
