@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import "./NavBar.css";
-import { Box, BottomNavigation, BottomNavigationAction } from "@mui/material";
+
 import { useNavigate, useLocation } from "react-router-dom";
+
+import { Box, BottomNavigation, BottomNavigationAction } from "@mui/material";
+import HomeFilledIcon from "@mui/icons-material/HomeFilled";
+import ManIcon from "@mui/icons-material/Man";
+import GirlIcon from "@mui/icons-material/Girl";
+
+import "./NavBar.css";
 
 function NavBar() {
   const navigate = useNavigate();
@@ -12,7 +18,6 @@ function NavBar() {
 
   // Manejar el cambio de navegación
   const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
-    
     if (value === "/" && newValue === "/") {
       return;
     }
@@ -25,9 +30,24 @@ function NavBar() {
     <nav className="navContainer">
       <Box className="navLinks">
         <BottomNavigation showLabels value={value} onChange={handleChange}>
-          <BottomNavigationAction label="Home" value="/" className="fontFamily"/>
-          <BottomNavigationAction label="Male" value="/filter/male" className="fontFamily"/>
-          <BottomNavigationAction label="Female" value="/filter/female" className="fontFamily"/>
+          <BottomNavigationAction
+            label="Home"
+            value="/"
+            className="fontFamily"
+            icon={<HomeFilledIcon color="action" />}
+          />
+          <BottomNavigationAction
+            label="Male"
+            value="/filter/male"
+            className="fontFamily"
+            icon={<ManIcon color="action" />}
+          />
+          <BottomNavigationAction
+            label="Female"
+            value="/filter/female"
+            className="fontFamily"
+            icon={<GirlIcon color="action" />}
+          />
         </BottomNavigation>
       </Box>
     </nav>

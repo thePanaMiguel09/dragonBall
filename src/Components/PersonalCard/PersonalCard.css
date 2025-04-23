@@ -1,0 +1,71 @@
+.personalCardContainer {
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  border: solid 1px gray;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  
+}
+
+.personalCardContainer:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+
+
+.headingCard {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #f6bd2d;
+  position: relative;
+  overflow: visible;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.imageCardContainer {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  z-index: 2;
+  position: absolute;
+  bottom: -30px;
+}
+
+.avatarImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.bodyCard {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.personalLinksContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.fontFamily {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleColor {
+  color: #f6bd2d;
+}
