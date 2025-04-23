@@ -25,9 +25,9 @@ function NavBar() {
     <nav className="navContainer">
       <Box className="navLinks">
         <BottomNavigation showLabels value={value} onChange={handleChange}>
-          <BottomNavigationAction label="Home" value="/" />
-          <BottomNavigationAction label="Male" value="/filter/male" />
-          <BottomNavigationAction label="Female" value="/filter/female" />
+          <BottomNavigationAction label="Home" value="/" className="fontFamily"/>
+          <BottomNavigationAction label="Male" value="/filter/male" className="fontFamily"/>
+          <BottomNavigationAction label="Female" value="/filter/female" className="fontFamily"/>
         </BottomNavigation>
       </Box>
     </nav>
