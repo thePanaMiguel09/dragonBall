@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navContainer {
+    width: 100vw;
+    height: 10vh;
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
+.navLinks {
+    width: 100% !important;
+    height: 100% !important;
+}

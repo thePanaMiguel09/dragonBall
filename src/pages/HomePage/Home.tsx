@@ -6,6 +6,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Button from "@mui/material/Button";
 
 import "./Home.css";
+import NavBar from "../../Components/NavBar/NavBar";
 
 function Home() {
   const { characters } = useCharacters();
@@ -13,7 +14,7 @@ function Home() {
   return (
     <div className="homeContainer">
       <Header />
-
+      <NavBar />
       <main className="logoContainer">
         <img src={logo} alt="logoDragonBall" className="logoImage" />
         <h1 className="text-logo">The Dragon Ball API</h1>
