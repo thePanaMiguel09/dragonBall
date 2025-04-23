@@ -7,6 +7,7 @@ import MalePage from "./pages/MalePage/MalePage";
 import FemalePage from "./pages/FemalePage/FemalePage";
 
 import "./App.css";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 const queryCliente = new QueryClient();
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/details/:id" element={<Details />} />
           <Route path="/filter/male" element={<MalePage />} />
           <Route path="/filter/female" element={<FemalePage />} />
+          <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
       </BrowserRouter>
       <div className="container"></div>

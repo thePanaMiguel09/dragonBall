@@ -1,0 +1,35 @@
+.pageContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../public/notFoundImage.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialogContainer {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(2255, 255, 255, 0.1); 
+  backdrop-filter: blur(3px); 
+  -webkit-backdrop-filter: blur(10px);
+  border: solid 1px white;
+  border-radius: 20px;
+}
+
+h2 {
+    color: #f6bd2d;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: whitesmoke;
+}
