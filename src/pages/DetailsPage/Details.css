@@ -49,9 +49,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  background-color: rgba(2255, 255, 255, 0.1); /* capa oscura translúcida */
-  backdrop-filter: blur(3px); /* desenfoque del fondo */
-  -webkit-backdrop-filter: blur(10px); /* soporte en Safari */
+  background-color: rgba(2255, 255, 255, 0.1); 
+  backdrop-filter: blur(3px); 
+  -webkit-backdrop-filter: blur(10px); 
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 

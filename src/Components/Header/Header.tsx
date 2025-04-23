@@ -3,6 +3,7 @@ import "./Header.css";
 
 import image from "/dragonBallIcon.webp";
 import heart from "/amor.png"
+import NavBar from "../NavBar/NavBar";
 
 function Header() {
   return (
@@ -30,6 +31,7 @@ function Header() {
         </button>
       </div>
     </header>
+    
   );
 }
 

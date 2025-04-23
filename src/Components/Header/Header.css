@@ -1,14 +1,13 @@
 .headerContainer {
   width: 100vw;
   height: 60px;
-  position: fixed;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 24px;
   padding-right: 24px;
-  position: fixed;
+ 
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
