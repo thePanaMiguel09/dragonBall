@@ -1,14 +1,15 @@
 import "./FemalePage.css";
 import { useGenderCharacter } from "../../hooks/UseGenderCharacters";
 import InfiniteScroll from "react-infinite-scroll-component";
+import CircularProgress from "@mui/material/CircularProgress";
+
 import CustomCard from "../../Components/CustomCard/CustomCard";
 
 function FemalePage() {
   const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetching } =
     useGenderCharacter("female");
 
-  if (isLoading) return <p>Cargando personajes...</p>;
-  if (isError) return <p>Error al cargar personajes.</p>;
+  if (isLoading) return <div>Cargando Más</div>;
 
   return (
     <div className="containerPage">

@@ -15,7 +15,7 @@
   }
 
 
-.headingCard {
+#headingCard {
   width: 100%;
   height: 40%;
   display: flex;

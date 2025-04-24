@@ -1,7 +1,6 @@
-
 import "./PersonalCard.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from '@mui/icons-material/Instagram';
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 interface Props {
   name: string;
@@ -15,7 +14,7 @@ interface Props {
 function PersonalCard({ img, name, career, semester, git, instagram }: Props) {
   return (
     <div className="personalCardContainer">
-      <div className="headingCard">
+      <div id="headingCard">
         <div className="imageCardContainer">
           <img src={img} alt="" className="avatarImage" />
         </div>
