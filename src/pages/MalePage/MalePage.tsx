@@ -6,7 +6,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import "./MalePage.css";
 
 function MalePage() {
-  const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetching } =
+  const { data, isLoading, fetchNextPage, hasNextPage, isFetching } =
     useGenderCharacter("male");
 
 

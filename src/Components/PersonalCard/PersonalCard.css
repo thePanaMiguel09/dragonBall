@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .personalCardContainer {
   width: 350px;
   height: 500px;
@@ -21,7 +27,9 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background-color: #f6bd2d;
+  background-image: url("../../../public/cardBackground.webp");
+  background-size: cover;
+  background-position: center;
   position: relative;
   overflow: visible;
   border-top-right-radius: 20px;
@@ -55,6 +63,9 @@
   justify-content: center;
   gap: 20px;
   padding-left: 20px;
+  background-color: rgb(60, 62, 68);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .personalLinksContainer {
@@ -68,4 +79,8 @@
 
 .titleColor {
   color: #f6bd2d;
+}
+
+p {
+  color: white;
 }

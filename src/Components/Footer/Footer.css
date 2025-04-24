@@ -1,0 +1,28 @@
+.footerConteiner {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  background-color: rgb(32, 35, 41);
+  align-items: center;
+  justify-content: center;
+}
+
+.namesContainer {
+  display: flex;
+  margin: 16px 0px 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  font-weight: 900;
+  color: rgb(189, 189, 189);
+}
+
+.name {
+  text-decoration: underline;
+  text-decoration-color: purple;
+}
+
+.name:hover {
+    color: #f6bd2d;
+  }

@@ -6,7 +6,8 @@
 
 .homeContainer {
   width: 100vw;
-  height: 100px;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
 }
 
 .logoContainer {
-  width: 100%;
+  max-width: 100%;
   height: 80vh;
   text-align: center;
   padding-top: 64px;
@@ -43,11 +44,10 @@ header {
 }
 
 .main {
+  width: 100%;
+  max-width: 100vw;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    repeat(1, 1fr)
-  );
+  grid-template-columns: repeat(auto-fill, repeat(1, 1fr));
   gap: 32px;
   padding: 16px;
   margin-left: auto;

@@ -5,9 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../../public/detailsBackground.jpeg");
-  background-size: cover;
-  background-position: center;
 }
 
 .cardContainer {
@@ -49,10 +46,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  background-color: rgba(2255, 255, 255, 0.1); 
-  backdrop-filter: blur(3px); 
-  -webkit-backdrop-filter: blur(10px); 
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgb(60, 62, 68);
 }
 
 .mainContentCard {
