@@ -5,23 +5,25 @@
 }
 
 .aboutContainer {
-  width: 100vw;
-  height: 100vh;
+  max-width: 100vw;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
+  background-color: rgb(39, 43, 51);
 }
 
 .text {
   font-family: Arial, Helvetica, sans-serif;
+  color: #f6bd2d;
 }
 
 .text h1 {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid black;
+  border-right: 2px solid #f6bd2d;
   width: fit-content;
   animation: typing 2.5s steps(30, end), blink 0.75s step-end infinite;
 }

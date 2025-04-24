@@ -7,9 +7,13 @@ import Button from "@mui/material/Button";
 
 import "./Home.css";
 import NavBar from "../../Components/NavBar/NavBar";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
   const { characters } = useCharacters();
+  
+
+  console.log(characters.status);
 
   return (
     <div className="homeContainer">
@@ -18,10 +22,8 @@ function Home() {
       <main className="logoContainer">
         <img src={logo} alt="logoDragonBall" className="logoImage" />
         <h1 className="text-logo">The Dragon Ball API</h1>
-        {characters.isLoading ? (
-          <Button loading>Default</Button>
-        ) : (
-          <InfiniteScroll
+      </main>
+      <InfiniteScroll
             className="main"
             dataLength={characters.data?.pages.flat().length || 0}
             hasMore={!!characters.hasNextPage}
@@ -43,8 +45,7 @@ function Home() {
               ))
             )}
           />
-        )}
-      </main>
+           <Footer/>
     </div>
   );
 }

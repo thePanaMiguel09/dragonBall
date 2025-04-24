@@ -22,15 +22,17 @@ function PersonalCard({ img, name, career, semester, git, instagram }: Props) {
 
       <div className="bodyCard fontFamily">
         <div>
-          {name}
+          <p>{name}</p>
           <h4 className="titleColor">Name</h4>
         </div>
         <div>
-          {career}
+          <p>{career}</p>
+          
           <h4 className="titleColor">Career</h4>
         </div>
         <div>
-          {semester} <h4 className="titleColor">Semester</h4>
+          <p>{semester}</p>
+           <h4 className="titleColor">Semester</h4>
         </div>
         <div className="personalLinksContainer">
           <a href={git}>
