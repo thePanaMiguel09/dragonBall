@@ -1,9 +1,11 @@
 
-import "./AboutUsPage.css";
 
 import Image1 from "../../../public/frank.png";
 import Image2 from "../../../public/miguel.png";
 import PersonalCard from "../../Components/PersonalCard/PersonalCard";
+
+import "./AboutUsPage.css";
+
 
 function AboutUsPage() {
   return (

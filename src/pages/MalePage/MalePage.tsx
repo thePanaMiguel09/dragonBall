@@ -1,18 +1,18 @@
 import InfiniteScroll from "react-infinite-scroll-component";
 import CustomCard from "../../Components/CustomCard/CustomCard";
 import { useGenderCharacter } from "../../hooks/UseGenderCharacters";
+import CircularProgress from '@mui/material/CircularProgress';
+
 import "./MalePage.css";
 
 function MalePage() {
   const { data, isLoading, isError, fetchNextPage, hasNextPage, isFetching } =
     useGenderCharacter("male");
 
-  if (isLoading) return <p>Cargando personajes...</p>;
-  if (isError) return <p>Error al cargar personajes.</p>;
 
   return (
     <div className="containerPage">
-      <InfiniteScroll
+      {isLoading || isFetching ?<CircularProgress />:<InfiniteScroll
         className="scrollContainer"
         dataLength={data?.pages.length!}
         next={fetchNextPage}
@@ -32,7 +32,7 @@ function MalePage() {
             />
           ))
         )}
-      />
+      />}
     </div>
   );
 }
